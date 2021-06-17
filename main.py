@@ -49,7 +49,7 @@ difficulty = input("Select difficulty: \n[0] Easy \n[1] Medium \n[2] Hard")
 dimensions = input("Select display dimensions: \n[0] 2560x1600 \n[1] 2560x1440 \n[2] 1920x1080 \n[3] Mac 2560x1600")
 locationList = pc.check(difficulty, dimensions)
 if locationList == None:
-    print ("Invalid input")
+    print ("The specified difficulty/resolution does not exist, or the game window is hidden.")
     time.sleep(2)
     sys.exit(1)
 print (locationList)
