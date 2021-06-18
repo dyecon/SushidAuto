@@ -24,7 +24,7 @@ try:
     import pyautogui
     print("Module 'pyautogui': Available")
 except:
-    print("\n Module 'pyautogui' is unavailable. You can install it with: pip install pyaotogui")
+    print("\n Module 'pyautogui' is unavailable. You can install it with: pip install pyautogui")
     sys.exit(1)
 
 tools = pyocr.get_available_tools()
