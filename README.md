@@ -14,12 +14,13 @@ Install these Python modules before you run the program:
 * PIL:  `pip install pillow`
 * PyOCR: `pip install pyocr`
 * cv2: `pip install opencv-python`
-* PyAutoGui: `pip install pyautogui`
+* PyAutoGui: `pip install pyautogui` (`pip3` for macOS/Linux; additional instructions for Linux [here](https://pyautogui.readthedocs.io/en/latest/install.html))
 * Tesseract-OCR
     * **Windows**: Download the installer from 
     https://github.com/UB-Mannheim/tesseract/wiki
     and add "C:\Program Files\Tesseract-OCR" to PATH.
     * **macOS**: Install with `brew install tesseract` 
+    * **Ubuntu 20.04**: Install with `sudo apt install tesseract-ocr`
 
 | OS           | Supported Resolution(s) | Difficulty         |
 |--------------|-------------------------|--------------------|
