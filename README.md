@@ -1,36 +1,35 @@
 # SushidAuto（スシドート）
-SUSHIDA Automation with Python
+タイピングゲーム「寿司打」自動化プログラム
 
-**WARNING**: Use this program at your own risk.
+**注意**: プログラムの利用は自己責任でお願いします。
 
-## Overview
-SushidAuto uses OCR to directly capture & analyze text from the game. Pyautogui is used to automatically type the words shown in the game.
+## 概要
+SushidAuto はOCRでゲーム内の文字を記録し、文字列に変換します。Pyautoguiはその名の通りGUIを自動化、すなわち表示された文字を入力します。
 
+## 準備
+お持ちのデバイスにPython3がインストールされている必要があります。
 
-## Prerequisites
-Python3 must be installed on your PC.
-
-Install these Python modules before you run the program:
+次に、以下のPythonモジュールをインストールしてください:
 * PIL:  `pip install pillow`
 * PyOCR: `pip install pyocr`
 * cv2: `pip install opencv-python`
-* PyAutoGui: `pip install pyautogui` (`pip3` for macOS/Linux; additional instructions for Linux [here](https://pyautogui.readthedocs.io/en/latest/install.html))
+* PyAutoGui: `pip install pyautogui` (macOS・Linuxは `pip3` Linuxの方は[こちら](https://pyautogui.readthedocs.io/en/latest/install.html)も参照)
 * Tesseract-OCR
-    * **Windows**: Download the installer from 
+    * **Windows**: インストーラをこちらからダウンロードし、
     https://github.com/UB-Mannheim/tesseract/wiki
-    and add "C:\Program Files\Tesseract-OCR" to PATH.
-    * **macOS**: Install with `brew install tesseract` 
-    * **Ubuntu 20.04**: Install with `sudo apt install tesseract-ocr`
+    "C:\Program Files\Tesseract-OCR" をPATHに追加してください。
+    * **macOS**: `brew install tesseract` でインストール
+    * **Ubuntu**: `sudo apt install tesseract-ocr` でインストール
 
-| OS           | Supported Resolution(s) | Difficulty         |
+| OS           | サポートされている解像度  　| 難易度         |
 |--------------|-------------------------|--------------------|
-| macOS (beta) | 2560×1600               | Easy, Medium, Hard |
-| Windows      | 2560×1600               | Easy, Hard         |
-|              | 2560×1440               | Easy, Medium, Hard |
-|              | 1920×1080               | Easy, Medium, Hard |
+| macOS (beta) | 2560×1600               | お手軽、お勧め、高級 |
+| Windows      | 2560×1600               | お手軽、高級       |
+|              | 2560×1440               | お手軽、お勧め、高級 |
+|              | 1920×1080               | お手軽、お勧め、高級 |
 
-## Running the script
-From the directory in which the files are saved, run the command:
+## 実行方法
+以下のコマンドで実行できます:
 
 `python main.py`
 
