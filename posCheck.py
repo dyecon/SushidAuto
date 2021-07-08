@@ -1,5 +1,6 @@
 import pyautogui
 
+#OpenCV must be installed for the "confidence" parameter to take effect
 def check(difficulty, dimensions):
     if (difficulty == "0"):
         if dimensions == "0": #2560x1600

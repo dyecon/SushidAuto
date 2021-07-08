@@ -45,6 +45,7 @@ import time
 import random
 
 #Check position
+speed = input("Select typing speed: \n[0] Natural \n[1] Ultra Fast")
 difficulty = input("Select difficulty: \n[0] Easy \n[1] Medium \n[2] Hard")
 dimensions = input("Select display dimensions: \n[0] 2560x1600 \n[1] 2560x1440 \n[2] 1920x1080 \n[3] Mac 2560x1600")
 locationList = pc.check(difficulty, dimensions)
@@ -72,7 +73,13 @@ while True:
         region=(locationList[0], locationList[1], locationList[2], locationList[3])    # 撮影範囲(x,y,width,height)
     )
     string = moji.moji("screenshot" + str(i))
-    pa.typewrite(string, interval = random.uniform(0.02,0.075))
+    if(speed == "0"):
+        for letter in string:
+            _interval = random.uniform(0.001,0.005)
+            pa.typewrite(letter, interval = _interval)
+            print (_interval)    
+    else:
+        pa.typewrite(string, interval = 0)
     print(string)
     nowtime1 = time.time()
     while True:
