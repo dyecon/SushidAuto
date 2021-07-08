@@ -34,6 +34,7 @@ SushidAuto はOCRでゲーム内の文字を記録し、文字列に変換しま
 `python main.py`
 
 
-## Known Issues:
-* macOS users may need to manually start the game
-* Script may be slow in macOS
+## 修正予定のバグなど:
+* macOSにてゲーム開始のクリックがされない
+* macOSで実行速度が遅い
+* 一部の難易度・解像度では間違った範囲から文字を読み取ってしまう
