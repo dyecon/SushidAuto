@@ -1,5 +1,6 @@
 # coding: utf-8
 import sys
+import os
 
 ###Check if required modules are available
 try:
@@ -77,12 +78,13 @@ while True:
         for letter in string:
             _interval = random.uniform(0.001,0.005)
             pa.typewrite(letter, interval = _interval)
-            print (_interval)    
+            #print (_interval)    
     else:
-        pa.typewrite(string, interval = 0)
+        pa.typewrite(string)
+    os.remove("screenshot" + str(i) + ".png")
     print(string)
     nowtime1 = time.time()
-    while True:
+    while True: #Wait for the next word to be displayed
         if time.time() - nowtime1 > 0.25:
             break
     i += 1
